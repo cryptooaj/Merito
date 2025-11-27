@@ -11,6 +11,10 @@ on:                                        # 2. Triggers (Top Level)
 jobs:                                      # 3. Jobs (Top Level)
   build_and_deploy:                        # Rename job for clarity
     runs-on: ubuntu-latest
+    permissions: # <-- ADD THIS BLOCK HERE
+      contents: read # Required to checkout the code
+      pages: write   # Required to push the deployment
+      id-token: write # <-- CRITICAL FIX: Required for OIDC authentication
     steps:                                 # 4. Steps (Indented)
       - uses: actions/checkout@v4          # Standard checkout step
 
