@@ -20,14 +20,14 @@ export const Home: React.FC<HomeProps> = ({ setView }) => {
              Private, Merit-Based DAO Governance on Midnight
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300 max-w-2xl mx-auto">
-            Sybil-resistant, expertise-weighted voting leveraging Verifiable Credentials and Zero-Knowledge Proofs for uncompromised privacy.
+            Sybil-resistant, expertise-weighted voting leverages Verifiable Credentials to verify merit. Zero-Knowledge Proofs ensure uncompromised privacy for every vote cast.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <button
               onClick={() => setView(ViewState.CODE_DOCS)}
               className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex items-center gap-2 transition-all"
             >
-              View the Code & SDK <ArrowRight size={16} />
+              View the Code & Reusable SDK <ArrowRight size={16} />
             </button>
             <button 
               onClick={() => setView(ViewState.ARCHITECTURE)}

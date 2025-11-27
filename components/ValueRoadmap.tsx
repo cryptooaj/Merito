@@ -17,7 +17,7 @@ export const ValueRoadmap: React.FC = () => {
       
       <div className="text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">
-          High ROI Justification: $9,000 USDM
+          High ROI Justification: $9,000 USDM for Foundational Governance
         </h2>
         <p className="text-lg text-gray-400 max-w-3xl mx-auto">
           A highly efficient investment for foundational governance infrastructure.
