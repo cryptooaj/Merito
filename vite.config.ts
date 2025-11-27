@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // 'base' is set to './' to ensure relative paths work on GitHub Pages
-  // regardless of the repository name.
-  base: './',
+  // IMPORTANT: This must match your GitHub repository name exactly
+  base: '/Merito/',
 })
