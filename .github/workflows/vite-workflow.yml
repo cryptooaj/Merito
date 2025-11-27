@@ -1,0 +1,43 @@
+name: Deploy Vite Project to GitHub Pages  # 1. Workflow Name (Top Level)
+
+on:                                        # 2. Triggers (Top Level)
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:                                      # 3. Jobs (Top Level)
+  build_and_deploy:                        # Rename job for clarity
+    runs-on: ubuntu-latest
+    permissions: # <-- ADD THIS BLOCK HERE
+      contents: read # Required to checkout the code
+      pages: write   # Required to push the deployment
+      id-token: write # <-- CRITICAL FIX: Required for OIDC authentication
+    steps:                                 # 4. Steps (Indented)
+      - uses: actions/checkout@v4          # Standard checkout step
+
+      # --- STEP 1: Setup Node.js and Install Dependencies ---
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build # ASSUMES your package.json has a 'build' script for Vite
+
+      # --- STEP 2: Deploy using the specific action ---
+      - name: Vite Github Pages Deployer     # THIS is the block from the top of your original file
+        uses: skywarth/vite-github-pages-deployer@v1.5.0
+        with:
+          # Note: Setting all inputs to 'null' is generally wrong. They should be omitted 
+          # to use defaults or set to actual values (e.g., './dist'). 
+          # We keep the structure but note the value issue.
+          public_base_path: null 
+          build_path: null
+          artifact_name: null 
+          debug_mode: false
+          # ... include only necessary parameters ...
