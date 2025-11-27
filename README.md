@@ -30,7 +30,6 @@ To run the full Proof-of-Concept locally, you must have the required Midnight SD
 
 ### Prerequisites
 
-  * Rust Toolchain (for Compact Contract compilation)
   * Node.js (LTS version)
   * Yarn or npm
   * Midnight SDK/Toolchain (refer to official documentation)
@@ -82,8 +81,8 @@ Developers are encouraged to reuse and extend the core components:
 
 | Name | Role | Profile Link |
 | :--- | :--- | :--- |
-| **Omid Ajourlou** | Software Architect & Project Lead | [Link to LinkedIn/Portfolio] |
-| **Sadegh Ghoroghi** | Software Engineer | [Link to LinkedIn/Portfolio] |
+| **Omid Ajourlou** | Software Architect & Project Lead 
+| **Sadegh Ghoroghi** | Software Engineer 
 
 ## 📜 License
 
@@ -91,4 +90,4 @@ This project is released under the **Apache 2.0 License**. See the `LICENSE` fil
 
 -----
 
-[[Link to Project Proposal Documentation](https://app.projectcatalyst.io/proposal/019ac2b6-7d7c-704c-b7b9-f85f03f9e865?version=019ac39a-645f-7c5a-8e2e-a66f2cc2fbbe)] | [Link to Technical Tutorials]
+[[Link to Project Proposal Documentation](https://app.projectcatalyst.io/proposal/019ac2b6-7d7c-704c-b7b9-f85f03f9e865?version=019ac39a-645f-7c5a-8e2e-a66f2cc2fbbe)]
