@@ -20,7 +20,7 @@ The DApp is composed of three interconnected, modular repositories:
 
 | Component | Technology | Role |
 | :--- | :--- | :--- |
-| **MeritoWeightingEngine** | Compact Language (Rust) | The auditable, on-chain contract that verifies the ZKP and updates the vote tally. **Does not access private data.** |
+| **MeritoWeightingEngine** | Compact Language | The auditable, on-chain contract that verifies the ZKP and updates the vote tally. **Does not access private data.** |
 | **TypeScript SDK** | TypeScript/JavaScript | The local engine responsible for reading VCs, running the ZK circuit, and generating the proof of eligibility and weight. |
 | **PoC UI** | TypeScript/React | The user interface demonstrating the private identity linking, VC upload, and transaction submission flow. |
 
@@ -30,7 +30,7 @@ To run the full Proof-of-Concept locally, you must have the required Midnight SD
 
 ### Prerequisites
 
-  * Rust Toolchain (for Compact Contract compilation)
+  * Compact Contract
   * Node.js (LTS version)
   * Yarn or npm
   * Midnight SDK/Toolchain (refer to official documentation)
