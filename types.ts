@@ -14,4 +14,5 @@ export interface BudgetItem {
   name: string;
   value: number;
   description: string;
+  [key: string]: any;
 }

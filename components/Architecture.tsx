@@ -1,5 +1,5 @@
 import React from 'react';
-import { Database, FileCode, CheckCircle, Server, ArrowDown } from 'lucide-react';
+import { Database, FileCode, CheckCircle, Server } from 'lucide-react';
 
 export const Architecture: React.FC = () => {
   return (

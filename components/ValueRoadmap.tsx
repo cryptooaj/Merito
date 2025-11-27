@@ -1,6 +1,6 @@
 import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import { Check, DollarSign, Calendar } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 import { BudgetItem } from '../types';
 
 const data: BudgetItem[] = [
@@ -60,7 +60,7 @@ export const ValueRoadmap: React.FC = () => {
                   paddingAngle={5}
                   dataKey="value"
                 >
-                  {data.map((entry, index) => (
+                  {data.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
